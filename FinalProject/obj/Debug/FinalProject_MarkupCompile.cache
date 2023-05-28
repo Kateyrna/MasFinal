@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Z:\MAS\FinalProject\FinalProject\obj\Debug\
+Z:\MAS\FinalProject2023\FinalProject\obj\Debug\
 FinalProject
 none
 false
 DEBUG;TRACE
-Z:\MAS\FinalProject\FinalProject\App.xaml
-11151548125
+Z:\MAS\FinalProject2023\FinalProject\App.xaml
+3580779957
 
-37-1026271014
-18-1288300006
-MainWindow.xaml;
+431981699053
+181995588001
+DoctorPanel.xaml;ViewAppointments.xaml;VisitDetails.xaml;
 
-False
+True
 

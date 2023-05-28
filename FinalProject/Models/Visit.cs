@@ -2,7 +2,7 @@
 
 namespace FinalProject.Models
 {
-    class Visit
+    public class Visit
     {
         public int VisitId { get; set; }
         public string Reason { get; set; }

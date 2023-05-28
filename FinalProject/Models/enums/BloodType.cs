@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.enums
 {
-    enum BloodType
+    public enum BloodType
     {
         APositive,
         ANegative,

@@ -1,9 +1,10 @@
 ﻿namespace FinalProject.Models.enums
 {
-    enum AppointmentStatus
+    public enum AppointmentStatus
     {
         Available,
         Booked,
+        Cancelled,
         Fullfilled
     }
 }

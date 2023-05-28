@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.enums
 {
-    enum PatientType
+    public enum PatientType
     {
         Pensioner,
         Disabled,

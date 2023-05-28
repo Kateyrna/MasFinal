@@ -18,7 +18,7 @@ namespace FinalProject.Migrations
                         Status = c.Int(nullable: false),
                         DoctorId = c.Int(nullable: false),
                         PatientId = c.Int(nullable: false),
-                        ReceptionstId = c.Int(nullable: false),
+                        ReceptionistId = c.Int(nullable: false),
                         Doctor_PersonId = c.Int(),
                         Receptionist_PersonId = c.Int(),
                     })

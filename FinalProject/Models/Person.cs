@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
-    abstract class Person
+    public abstract class Person
     {
         [Key]
         public int PersonId { get; set; }

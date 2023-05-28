@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Models
 {
-    class Receptionist : Employee
+    public class Receptionist : Employee
     {
         [Key]
-        public int ReceptionstId { get; set; }
+        public int ReceptionistId { get; set; }
 
         public ICollection<Appointment> Appointments { get; set; }
 

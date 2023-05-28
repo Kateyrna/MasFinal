@@ -20,31 +20,19 @@ namespace FinalProject.DAL
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
-        internal virtual DbSet<Person> Person { get; set; }
-        internal virtual DbSet<Employee> Employee { get; set; }
-        internal virtual DbSet<Doctor> Doctor { get; set; }
-        internal virtual DbSet<Receptionist> Receptionist { get; set; }
-        internal virtual DbSet<Patient> Patient { get; set; }
-        internal virtual DbSet<Account> Account { get; set; }
-        internal virtual DbSet<Login> Login { get; set; }
-        internal virtual DbSet<Appointment> Appointment { get; set; }
-        internal virtual DbSet<Visit> Visit { get; set; }
-        internal virtual DbSet<Prescription> Prescription { get; set; }
+        public virtual DbSet<Person> Person { get; set; }
+        public virtual DbSet<Employee> Employee { get; set; }
+        public virtual DbSet<Doctor> Doctor { get; set; }
+        public virtual DbSet<Receptionist> Receptionist { get; set; }
+        public virtual DbSet<Patient> Patient { get; set; }
+        public virtual DbSet<Account> Account { get; set; }
+        public virtual DbSet<Login> Login { get; set; }
+        public virtual DbSet<Appointment> Appointment { get; set; }
+        public virtual DbSet<Visit> Visit { get; set; }
+        public virtual DbSet<Prescription> Prescription { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Login>()
-                .HasRequired(s => s.Account)
-                .WithRequiredPrincipal(d => d.Login);
-
-            modelBuilder.Entity<Appointment>()
-                .HasRequired(s => s.Visit)
-                .WithRequiredPrincipal(v => v.Appointment);
-
-            modelBuilder.Entity<Account>()
-                .HasRequired(s => s.Employee)
-                .WithRequiredPrincipal(e => e.Account);
-
             base.OnModelCreating(modelBuilder);
         }
     }

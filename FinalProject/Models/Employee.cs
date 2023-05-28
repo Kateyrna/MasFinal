@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
-    abstract class Employee : Person
+    public abstract class Employee : Person
     {
         [Key]
         public int EmployeeId { get; set; }
         public decimal Salary { get; set; }
         public DateTime Hiredate { get; set; }
+        public string EmployeeTest { get; set; }
 
         public Account Account { get; set; }
     }

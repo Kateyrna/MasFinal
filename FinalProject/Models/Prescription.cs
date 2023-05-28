@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
-    class Prescription
+    public class Prescription
     {
         [Key]
         public int PrescriptionId { get; set; }
@@ -19,7 +19,6 @@ namespace FinalProject.Models
         public string DispenseAmount { get; set; }
         public string Refill { get; set; }
         public DateTime IssuedDate { get; set; }
-
         public int VisitId { get; set; }
         public Visit Visit { get; set; }
     }

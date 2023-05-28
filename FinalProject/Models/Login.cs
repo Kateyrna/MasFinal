@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models
 {
-    class Login
+    public class Login
     {
         [Key]
         public int LoginId { get; set; }

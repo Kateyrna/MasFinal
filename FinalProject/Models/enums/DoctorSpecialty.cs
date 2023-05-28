@@ -1,6 +1,6 @@
 ﻿namespace FinalProject.Models.enums
 {
-    internal enum DoctorSpecialty
+    public enum DoctorSpecialty
     {
         PrimaryCare,
         Dentistry,

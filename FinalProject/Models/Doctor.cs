@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace FinalProject.Models
 {
-    internal class Doctor : Employee
+    public class Doctor : Employee
     {
         [Key]
         public int DoctorId { get; set; }

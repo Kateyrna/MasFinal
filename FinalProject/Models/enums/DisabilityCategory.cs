@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FinalProject.Models.enums
 {
-    enum DisabilityCategory
+    public enum DisabilityCategory
     {
         A,
         B,

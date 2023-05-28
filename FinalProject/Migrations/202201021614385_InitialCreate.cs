@@ -25,7 +25,7 @@ namespace FinalProject.Migrations
                         DoctorId = c.Int(),
                         Title = c.String(),
                         DoctorSpecialty = c.Int(),
-                        ReceptionstId = c.Int(),
+                        ReceptionistId = c.Int(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.PersonId);

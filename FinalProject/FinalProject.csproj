@@ -36,10 +36,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -64,19 +64,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="DAL\MasDbContext.cs" />
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="DoctorPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewAppointments.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VisitDetails.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\202201021614385_InitialCreate.cs" />
@@ -107,10 +111,17 @@
     <Compile Include="Migrations\202201021736483_AddAccountEmployeeRelation.Designer.cs">
       <DependentUpon>202201021736483_AddAccountEmployeeRelation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202091730121_UpdateEmployee.cs" />
+    <Compile Include="Migrations\202202091730121_UpdateEmployee.Designer.cs">
+      <DependentUpon>202202091730121_UpdateEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Doctor.cs" />
+    <Compile Include="DoctorPanel.xaml.cs">
+      <DependentUpon>DoctorPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\enums\AppointmentStatus.cs" />
     <Compile Include="Models\enums\BloodType.cs" />
@@ -123,7 +134,18 @@
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Prescription.cs" />
     <Compile Include="Models\Receptionist.cs" />
+    <Compile Include="s18258DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>s18258DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAppointments.xaml.cs">
+      <DependentUpon>ViewAppointments.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\Visit.cs" />
+    <Compile Include="VisitDetails.xaml.cs">
+      <DependentUpon>VisitDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -158,6 +180,9 @@
     <EmbeddedResource Include="Migrations\202201021736483_AddAccountEmployeeRelation.resx">
       <DependentUpon>202201021736483_AddAccountEmployeeRelation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202091730121_UpdateEmployee.resx">
+      <DependentUpon>202202091730121_UpdateEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -166,6 +191,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="s18258DataSet.xsc">
+      <DependentUpon>s18258DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="s18258DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>s18258DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="s18258DataSet.xss">
+      <DependentUpon>s18258DataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
