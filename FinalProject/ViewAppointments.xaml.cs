@@ -19,6 +19,8 @@ namespace MAS_FinalProject
         string selectedRadioButton;
         DateTime selectedDate;
         string selectedLastName;
+        List<Appointment> appointments;
+
 
         public ViewAppointments()
         {
@@ -57,7 +59,7 @@ namespace MAS_FinalProject
                 }
 
                 // Execute the query and return the list of appointments
-                List<Appointment> appointments = appointmentsQuery.ToList();
+                appointments = appointmentsQuery.ToList();
                 return appointments;
   
             }
