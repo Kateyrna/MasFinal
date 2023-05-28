@@ -1,6 +1,7 @@
 ﻿using FinalProject.Models.enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,7 @@ namespace FinalProject.Models
         public int ReceptionistId { get; set; }
         public Receptionist Receptionist { get; set; }
 
-        public int VisitId { get; set; }
-        public Visit Visit { get; set; }
+        public ICollection<Visit> Visits { get; set; } = new List<Visit>();
 
         public static readonly Dictionary<int, string> Slots;
 
