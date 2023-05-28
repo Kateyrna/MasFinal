@@ -14,6 +14,8 @@ namespace FinalProject.Models
         public int AccountId { get; set; }
         public DateTime CreationDate { get; set; }
         public Login Login { get; set; }
+
+        public int EmployeeId { get; set; }
         public Employee Employee { get; set; }
     }
 }

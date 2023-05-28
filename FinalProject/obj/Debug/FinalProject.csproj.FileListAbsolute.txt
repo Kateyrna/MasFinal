@@ -31,13 +31,6 @@ Z:\MAS\FinalProject\FinalProject\obj\Debug\FinalProject.exe
 Z:\MAS\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
 Z:\MAS\FinalProject\FinalProject\obj\Debug\FinalProject.Migrations.UpdateEmployee.resources
 Z:\MAS\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.SuggestedBindingRedirects.cache
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.exe.config
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.exe
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.pdb
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.dll
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.SqlServer.dll
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.xml
-Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.SqlServer.xml
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\FinalProject.csproj.AssemblyReference.cache
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\FinalProject.csproj.SuggestedBindingRedirects.cache
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\DoctorPanel.g.cs
@@ -46,6 +39,13 @@ Z:\MAS\FinalProject2023\FinalProject\obj\Debug\VisitDetails.g.cs
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\App.g.cs
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\FinalProject_MarkupCompile.cache
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\FinalProject_MarkupCompile.lref
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.exe.config
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.exe
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\FinalProject.pdb
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.dll
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.SqlServer.dll
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.xml
+Z:\MAS\FinalProject2023\FinalProject\bin\Debug\EntityFramework.SqlServer.xml
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\DoctorPanel.baml
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\ViewAppointments.baml
 Z:\MAS\FinalProject2023\FinalProject\obj\Debug\VisitDetails.baml

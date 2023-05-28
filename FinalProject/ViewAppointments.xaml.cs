@@ -149,7 +149,7 @@ namespace MAS_FinalProject
 
         private void radioButton3_Checked(object sender, RoutedEventArgs e)
         {
-
+            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
         }
 
         private void textBox1_TextChanged(object sender, TextChangedEventArgs e)

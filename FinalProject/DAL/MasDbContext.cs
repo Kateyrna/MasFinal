@@ -1,5 +1,6 @@
 using FinalProject.Models;
 using System.Data.Entity;
+using System.Reflection.Emit;
 
 namespace FinalProject.DAL
 {
@@ -33,7 +34,10 @@ namespace FinalProject.DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
+
             base.OnModelCreating(modelBuilder);
+
         }
     }
 
