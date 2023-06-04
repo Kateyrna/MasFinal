@@ -12,14 +12,13 @@ namespace MAS_FinalProject
     /// <summary>
     /// Interaction logic for ViewAppointments.xaml
     /// </summary>
-    public partial class ViewAppointments : Window
+    public partial class ViewAppointments: Window
     {
         public int VisitId { get; set; }
         MasDbContext _context;
         string selectedRadioButton;
         DateTime selectedDate;
         string selectedLastName;
-        List<Appointment> appointments;
 
 
         public ViewAppointments()
@@ -32,61 +31,23 @@ namespace MAS_FinalProject
 
         }
 
-        public List<Appointment> GetAppointmentsByRadioButton(string selectedRadioButton, DateTime selectedDate, string selectedLastName)
-        {
-            using (var context = new MasDbContext())
-            {
-                IQueryable<Appointment> appointmentsQuery = context.Appointment;
-
-                switch (selectedRadioButton)
-                {
-                    case "RadioButton1":
-                        // Filter appointments based on criteria for RadioButton1
-                        appointmentsQuery = appointmentsQuery.Where(a => a.VisitDate.Date == selectedDate.Date);
-                        break;
-
-                    case "RadioButton2":
-                        // Filter appointments based on criteria for RadioButton2
-                        appointmentsQuery = appointmentsQuery.Where(a => a.Patient.LastName == selectedLastName);
-                        break;
-
-                    // Add additional cases for other radio buttons if needed
-
-                    default:
-                        // Default case when no radio button is selected
-                        // You can choose to return all appointments or handle it differently based on your requirements
-                        break;
-                }
-
-                // Execute the query and return the list of appointments
-                appointments = appointmentsQuery.ToList();
-                return appointments;
-  
-            }
-        }
-
-      
-
         private void LoadData()
         {
 
 
-            var login = new Login
-            {
+            var login = new Login {
                 Password = "asdqwe"
             };
 
-            var account = new Account
-            {
+            var account = new Account {
                 CreationDate = DateTime.Now,
                 Login = login,
-                
+
             };
 
             login.Account = account;
 
-            var doctor = new Doctor
-            {
+            var doctor = new Doctor {
                 FirstName = "John",
                 LastName = "Done",
                 Hiredate = DateTime.Now,
@@ -100,8 +61,7 @@ namespace MAS_FinalProject
                 PhoneNumber = "253213213"
             };
 
-            var appointment = new Appointment
-            {
+            var appointment = new Appointment {
                 AppointmentId = 1,
                 VisitDate = new DateTime(2023, 5, 22), // Example date value
                 BookingDate = new DateTime(2023, 5, 22),
@@ -110,23 +70,19 @@ namespace MAS_FinalProject
                 DoctorId = 1,
                 PatientId = 1,
                 ReceptionistId = 1,
-                VisitId = 1
             };
 
             // Access the Slots dictionary values:
             string slotDescription = Appointment.Slots[appointment.SlotNumber];
 
-            try
-            {
-                using (var db = new MasDbContext())
-                {
+            try {
+                using (var db = new MasDbContext()) {
                     db.Doctor.Add(doctor);
                     db.Appointment.Add(appointment);
                     db.SaveChanges();
                 }
             }
-            catch(Exception ex)
-            {
+            catch (Exception ex) {
             }
         }
 
@@ -137,19 +93,29 @@ namespace MAS_FinalProject
 
         private void radioButton1_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate,selectedLastName);
-            //HOW TO GET IT TO WORK AND DISPLAY THE LIST OF APPOINTMENTS
-
+            using (var context = new MasDbContext()) {
+                // Filter appointments based on criteria for RadioButton1
+                //appointments = appointmentsQuery.Where(a => a.VisitDate.Date == selectedDate.Date).ToList();
+                appointmentsList.Items.Add(from a in context.Appointment
+                                           where a.VisitDate == selectedDate
+                                           select a);
+            }
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
+            using (var context = new MasDbContext()) {
+                // Filter appointments based on criteria for RadioButton1
+                //appointments = appointmentsQuery.Where(a => a.VisitDate.Date == selectedDate.Date).ToList();
+                appointmentsList.Items.Add(from a in context.Appointment
+                                           where a.Patient.LastName == selectedLastName
+                                           select a);
+            }
         }
 
         private void radioButton3_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
+            //TODO: implement 
         }
 
         private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
