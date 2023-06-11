@@ -11,11 +11,12 @@ namespace FinalProject.Models
     public class Account
     {
         [Key]
+        //[ForeignKey("Employee")]
         public int AccountId { get; set; }
         public DateTime CreationDate { get; set; }
         public Login Login { get; set; }
 
-        public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
+      //  public int EmployeeId { get; set; }
+        //public Employee Employee { get; set; }
     }
 }

@@ -42,9 +42,9 @@
         <Label Content="Date:" HorizontalAlignment="Left" Margin="24,53,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="95,87,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged"/>
         <Label Content="Last name:" HorizontalAlignment="Left" Margin="24,83,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton1" Content="Use date only" IsChecked="True" HorizontalAlignment="Left" Margin="24,119,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
-        <RadioButton x:Name="radioButton2" Content="Use last name" HorizontalAlignment="Left" Margin="130,119,0,0" VerticalAlignment="Top" Checked="radioButton2_Checked"/>
-        <RadioButton x:Name="radioButton3" Content="Use both" HorizontalAlignment="Left" Margin="239,119,0,0" VerticalAlignment="Top" Checked="radioButton3_Checked"/>
+        <RadioButton x:Name="radioButton1" Content="Use date only" HorizontalAlignment="Left" Margin="24,119,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton2" Content="Use last name" HorizontalAlignment="Left" Margin="130,119,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radioButton3" Content="Use both" HorizontalAlignment="Left" Margin="239,119,0,0" VerticalAlignment="Top"/>
         <Button Content="Edit" HorizontalAlignment="Left" Margin="455,232,0,0" VerticalAlignment="Top" IsEnabled="False" Height="36" Width="85"/>
         <Button Content="Visits" HorizontalAlignment="Left" Margin="455,276,0,0" VerticalAlignment="Top" Height="36" Width="85" Click="Button_Click"/>
 

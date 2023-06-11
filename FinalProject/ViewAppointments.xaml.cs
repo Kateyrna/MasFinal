@@ -28,11 +28,15 @@ namespace MAS_FinalProject
 
             _context = new MasDbContext();
 
-            LoadData();
+            //LoadData();
+
+           // _context.DropDatabase();
 
         }
 
-        public List<Appointment> GetAppointmentsByRadioButton(string selectedRadioButton, DateTime selectedDate, string selectedLastName)
+
+
+        /*public List<Appointment> GetAppointmentsByRadioButton(string selectedRadioButton, DateTime selectedDate, string selectedLastName)
         {
             using (var context = new MasDbContext())
             {
@@ -59,13 +63,14 @@ namespace MAS_FinalProject
                 }
 
                 // Execute the query and return the list of appointments
-                appointments = appointmentsQuery.ToList();
-                return appointments;
+                //appointments = appointmentsQuery.ToList();
+               // return appointments;
   
             }
         }
 
-      
+      */
+
 
         private void LoadData()
         {
@@ -90,7 +95,7 @@ namespace MAS_FinalProject
                 FirstName = "John",
                 LastName = "Done",
                 Hiredate = DateTime.Now,
-                Account = account,
+                //Account = account,
                 DoctorSpecialty = FinalProject.Models.enums.DoctorSpecialty.Dentistry,
                 GenderType = FinalProject.Models.enums.GenderType.Male,
                 Email = "john@medical.com",
@@ -135,26 +140,28 @@ namespace MAS_FinalProject
             new VisitDetails(VisitId).Show();
         }
 
-        private void radioButton1_Checked(object sender, RoutedEventArgs e)
+       private void radioButton1_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate,selectedLastName);
+           // GetAppointmentsByRadioButton(selectedRadioButton, selectedDate,selectedLastName);
             //HOW TO GET IT TO WORK AND DISPLAY THE LIST OF APPOINTMENTS
 
         }
 
         private void radioButton2_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
+           // GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
         }
 
         private void radioButton3_Checked(object sender, RoutedEventArgs e)
         {
-            GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
+            //GetAppointmentsByRadioButton(selectedRadioButton, selectedDate, selectedLastName);
         }
-
+       
         private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
+
+      
     }
 }

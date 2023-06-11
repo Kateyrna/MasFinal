@@ -87,37 +87,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202201021614385_InitialCreate.cs" />
-    <Compile Include="Migrations\202201021614385_InitialCreate.Designer.cs">
-      <DependentUpon>202201021614385_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021623319_AddLoginAccountModels.cs" />
-    <Compile Include="Migrations\202201021623319_AddLoginAccountModels.Designer.cs">
-      <DependentUpon>202201021623319_AddLoginAccountModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021708289_AddAppointment.cs" />
-    <Compile Include="Migrations\202201021708289_AddAppointment.Designer.cs">
-      <DependentUpon>202201021708289_AddAppointment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021713396_AddVisitPrescriptionModels.cs" />
-    <Compile Include="Migrations\202201021713396_AddVisitPrescriptionModels.Designer.cs">
-      <DependentUpon>202201021713396_AddVisitPrescriptionModels.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021724385_AddVisitPrescriptions_AndAppointmentRelationships.cs" />
-    <Compile Include="Migrations\202201021724385_AddVisitPrescriptions_AndAppointmentRelationships.Designer.cs">
-      <DependentUpon>202201021724385_AddVisitPrescriptions_AndAppointmentRelationships.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021734274_AddPatientInheritance.cs" />
-    <Compile Include="Migrations\202201021734274_AddPatientInheritance.Designer.cs">
-      <DependentUpon>202201021734274_AddPatientInheritance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201021736483_AddAccountEmployeeRelation.cs" />
-    <Compile Include="Migrations\202201021736483_AddAccountEmployeeRelation.Designer.cs">
-      <DependentUpon>202201021736483_AddAccountEmployeeRelation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202202091730121_UpdateEmployee.cs" />
-    <Compile Include="Migrations\202202091730121_UpdateEmployee.Designer.cs">
-      <DependentUpon>202202091730121_UpdateEmployee.cs</DependentUpon>
+    <Compile Include="Migrations\202306111204054_initialemptymigration.cs" />
+    <Compile Include="Migrations\202306111204054_initialemptymigration.designer.cs">
+      <DependentUpon>202306111204054_initialemptymigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -133,6 +105,7 @@
     <Compile Include="Models\enums\DoctorSpecialty.cs" />
     <Compile Include="Models\enums\GenderType.cs" />
     <Compile Include="Models\enums\PatientType.cs" />
+    <Compile Include="Models\Example.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Patient.cs" />
     <Compile Include="Models\Person.cs" />
@@ -163,29 +136,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202201021614385_InitialCreate.resx">
-      <DependentUpon>202201021614385_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021623319_AddLoginAccountModels.resx">
-      <DependentUpon>202201021623319_AddLoginAccountModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021708289_AddAppointment.resx">
-      <DependentUpon>202201021708289_AddAppointment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021713396_AddVisitPrescriptionModels.resx">
-      <DependentUpon>202201021713396_AddVisitPrescriptionModels.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021724385_AddVisitPrescriptions_AndAppointmentRelationships.resx">
-      <DependentUpon>202201021724385_AddVisitPrescriptions_AndAppointmentRelationships.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021734274_AddPatientInheritance.resx">
-      <DependentUpon>202201021734274_AddPatientInheritance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201021736483_AddAccountEmployeeRelation.resx">
-      <DependentUpon>202201021736483_AddAccountEmployeeRelation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202202091730121_UpdateEmployee.resx">
-      <DependentUpon>202202091730121_UpdateEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202306111204054_initialemptymigration.resx">
+      <DependentUpon>202306111204054_initialemptymigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

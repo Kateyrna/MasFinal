@@ -15,6 +15,6 @@ namespace FinalProject.Models
         public DateTime Hiredate { get; set; }
         public string EmployeeTest { get; set; }
 
-        public Account Account { get; set; }
+      //  public Account Account { get; set; }
     }
 }
